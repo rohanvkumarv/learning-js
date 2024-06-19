@@ -18,3 +18,11 @@ const all_heroes = [...marvel_heroes,...dc_heroes]
 // can concatane multple arrays   which is limiation in concate keyword
 console.log(all_heroes);
 const another_array = [1,2,3,4,5,[6,7,8] ,9,[3,5,3,[4,6]]]
+
+const real_another_array = another_array.flat(Infinity)
+console.log(real_another_array);
+// output [
+//     1, 2, 3, 4, 5, 6,
+//     7, 8, 9, 3, 5, 3,
+//     4, 6
+//   ]
