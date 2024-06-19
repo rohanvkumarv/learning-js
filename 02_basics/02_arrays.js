@@ -26,3 +26,17 @@ console.log(real_another_array);
 //     7, 8, 9, 3, 5, 3,
 //     4, 6
 //   ]
+
+// console.log(Array.isArray("rohan"));// checks whether is it array or not
+// console.log(Array.isArray(all_heroes));// checks whether is it array or not
+// console.log(Array.from("rohan"));
+
+// //creates array give it any type
+// console.log(Array.from({name:"rohan"})); //interesting
+
+let score1 = 100;
+let score2 = 100;
+let score3 = 100;
+
+
+console.log(Array.of(score1,score3,score2));
