@@ -31,20 +31,20 @@ const arr1 = new Array("iron man  " , "dr.strange")
 
 // slice splice 
 
-console.log("a",arr);
+// console.log("a",arr);
 
-const mya1  = arr.slice(1,3)
-console.log(mya1);
+// const mya1  = arr.slice(1,3)
+// console.log(mya1);
 
-console.log("b",arr);
+// console.log("b",arr);
 
 
 
 
 // splice 
-const mya2 = arr.splice(1,3)
-console.log("c" ,arr);
-console.log(mya2);
+// const mya2 = arr.splice(1,3)
+// console.log("c" ,arr);
+// console.log(mya2);
 
 // slice doesnt change original array 
-// splice cuts those elements 
+// splice cuts those elements   
