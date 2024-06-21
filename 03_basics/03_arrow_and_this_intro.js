@@ -54,5 +54,36 @@ console.log(this); // it refers to empty object
 
 const chai =  () => {
     let username = "rohan"
-    console.log(this);
+    // console.log(this);
 }
+
+// diff b/w arrow and normal function 
+// this keyword is not used in any of them
+// pure arrow functuuon now  
+
+// () => {} 
+
+
+
+const addTwo  = (num1,num2) =>{
+    return num1+num2
+}
+console.log(addTwo(19,23))
+
+
+
+ 
+// implicite   return- return likhna nhi padh rha
+// if curly braces are used  this keyword wil be used if not then it wont be used 
+const addThree  = (num1,num2) =>  num1+num2
+
+// const addThree  = (num1,num2) =>  (num1+num2)
+// const addThree  = (num1,num2) =>  ({username : "rohan"})
+
+console.log(addThree(19,23))
+
+
+
+arr = [23,55,35,32,5,2,4,23,]
+
+// arr.forEach(()=> )
