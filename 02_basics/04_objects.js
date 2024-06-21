@@ -79,4 +79,45 @@ const users = [
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
+// 3rd lecture on objects 
 
+
+// destructuring objects
+const course = {
+    coursename:"js in hindi",
+    price:"999",
+    courseinstructor :"hitesh"
+}
+
+// course.courseinstructor    
+const {courseinstructor : instructor } = course
+// console.log(courseinstructor);
+
+console.log(instructor);
+// for using multiples place same value 
+// const navbar = ({company}) => {
+
+// }
+
+// navbar(company = "hitesh ")
+
+// destructuring array 
+
+// json   -  object with no name..not a obj
+// {
+//     "name" : "hitesh",
+//     "coursename":"js",
+//     "price":"free"
+// }
+
+
+// api  send a req to server and get query
+// send req get obj then use it / 
+// use fetch method to get data drom url and then convert to get data 
+
+
+// api  in array 
+// study json  response and fromat it 
+
+// u can get any type of data as response from Api so u gotta know
+// understand anyalise how to get data from ti 
