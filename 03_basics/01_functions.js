@@ -53,17 +53,48 @@ function login_user (username = "same"){
 }
 
 // console.log(login_user("rohan"))
-console.log(login_user()) 
+// console.log(login_user()) 
 // output :result  undefined  
 
 
 
 
+// second lec on functions 
+// ... rest and spread operator  
+function CalculateCartPrice(val1,val2,...num1){
+    return num1;
+}
+// CalculateCartPrice(2)
+// console.log(CalculateCartPrice(2,400,500));
+// how to pass multiple values to function 
+
+
+const user  = {
+    username :"hitesh",
+    price:900,
+}
+
+function handleObject (anyobject){
+    console.log(`username is ${anyobject.username} price is ${anyobject.price}`);
+
+}
+// handleObject(user)
+handleObject({
+    username :"hitesh",
+    price:900,
+})
 
 
 
+const myarr = [100,2000,355,22,21,]
+function returnSecondValue (getarraay){
+    return getarraay[2]
+}
+console.log(returnSecondValue(myarr));
+console.log(returnSecondValue(
+    [100,2000,355,22,21,]
 
-
+));
 
 
 
