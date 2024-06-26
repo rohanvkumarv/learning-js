@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color:#fff;">
+
+
+    
+</body>
+
+<script>
+    const div_ = document.createElement('div')
+    console.log(div_);
+
+    div_.className = "main";
+    // div.id = "myId";
+
+    div_.id = Math.round(Math.random () * 10 + 1)
+
+    div_.setAttribute("title", "generated-title" )// does not override
+    div_.style.backgroundColor = "green";
+    div_.style.padding = "12px";
+
+    div_.innerText = "chai aur code" //2 workds
+    const add_text = document.createTextNode("chai aur code")
+    div_.appendChild(add_text)
+
+    document.body.appendChild(div_)
+    
+
+
+
+</script>
+</html>
