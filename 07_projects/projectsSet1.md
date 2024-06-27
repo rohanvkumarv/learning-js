@@ -37,7 +37,7 @@ buttons.forEach((button) => {
 
 ```
 
-#project 1
+#project 2
 
 ```javascript
 
@@ -64,4 +64,16 @@ form.addEventListener('submit', (e) => {
     results.innerHTML = `bmi is ${bmi}`
   }
 });
+```
+
+#project 3
+
+``` javascript
+const clock = document.getElementById('clock');
+
+setInterval(function () {
+  const date = new Date();
+  // console.log(date.toLocaleTimeString());
+  clock.innerHTML = `${date.toLocaleTimeString()}`
+}, 1000);
 ```
