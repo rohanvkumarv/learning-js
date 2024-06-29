@@ -49,40 +49,45 @@
     // event propagation  
 
     // event bubbling.event capturing
-    document.getElementById('images').addEventListener('click',(e)=>{
-      console.log("clicked inside the ul");
+    // document.getElementById('images').addEventListener('click',(e)=>{
+    //   console.log("clicked inside the ul");
        
 
-    },false)   
-    document.getElementById('owl').addEventListener('click',(e)=>{
-      console.log("owl clicked");
-      e.stopPropagation();// stop bubbling  
+    // },false)   
+    // document.getElementById('owl').addEventListener('click',(e)=>{
+    //   console.log("owl clicked");
+    //   e.stopPropagation();// stop bubbling  
 
 
-    },false)
+    // },false)
 
     // bubbling from inner to outer and by false ..false is default 
     // capturing parent - inner use true 
 
 
-    document.getElementById("google").addEventListener("click",function(e){
-       e.preventDefault();
-       e.stopPropagation()
-       console.log("google clicked")
-    })
+    // document.getElementById("google").addEventListener("click",function(e){
+    //    e.preventDefault();
+    //    e.stopPropagation()
+    //    console.log("google clicked")
+    // })
 
   
     // activities 
     document.querySelector("#images").addEventListener("click",(e)=>{
-        // e.preventDefault();
+        e.preventDefault();
         console.log(e.target.parentNode);
+        console.log(e.target.tagName);
 
-        let removeIt = e.target.parentNode
-        removeIt.removeIt()
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove() 
+            // removeIt.parentNode.removeChild(removeIt)
+        }
+        // spill over  / 
 
-
-
+       
     })
+
 
 
 
