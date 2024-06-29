@@ -116,3 +116,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
    console.log(error);
 })
 
+// fetch returns a promise that is resolve reject status of a asycn func 
