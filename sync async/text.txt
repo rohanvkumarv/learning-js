@@ -2,3 +2,7 @@ fetch
 
 creates a new queue 
 priority higher than default one
+
+
+default js engine is not asynchronous
+but whole run time environment is
