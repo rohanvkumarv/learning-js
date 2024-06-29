@@ -26,4 +26,7 @@ function User (username,loginCount,isloggedin){
    return this
 }
 
-const userone
+const userone = new User("hitesh",12,true)
+const userTwo = new User("chaiaurcode",11,false)
+console.log(userone); //override value over first one
+console.log(userTwo); //override value over first one
