@@ -1,0 +1,4 @@
+fetch 
+
+creates a new queue 
+priority higher than default one
