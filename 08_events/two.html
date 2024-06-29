@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // avaiable through browser not part of pure js
+    //  clear time interval
+    // setInterval - do the thing  repeatedly  
+    // set interval do it once after that time 
+
+
+    // setTimeout(() => {
+    //     console.log("Rohan Kumar");
+    // }, 2000);
+
+    // const rohan = () => {
+    //     console.log("Rohan Kumar");
+    // }
+
+    // setTimeout(rohan, 2000);
+
+
+    const ChangeText = () =>{
+        document.querySelector('h1').innerHTML = "Best Js Course"
+    }
+    // setTimeout(ChangeText,5000)
+
+    const changeMe  = setTimeout(ChangeText,5000)
+
+
+    // clearTimeout(changeMe)
+
+    document.querySelector('#stop').addEventListener("click", (e)=>{
+         clearTimeout(changeMe)
+
+    })
+   
+
+
+</script>
+</html>
