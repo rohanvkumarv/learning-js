@@ -41,6 +41,6 @@ const hitesh = new User("hitesh.ai","abc")
 console.log(hitesh.pass);
 console.log(hitesh.email);
 console.log(hitesh);
-ABC
-HITESH.AI
-User { _email: 'hitesh.ai', _pass: 'abc' }
+// ABC
+// HITESH.AI
+// User { _email: 'hitesh.ai', _pass: 'abc' }
