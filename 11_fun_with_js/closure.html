@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange"></button>
+    <button id="green"></button>
+</body>
+<script>
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+    // first 
+    // function outer(){
+    //         let username = "hitesh"
+    //     }
+  
+    // console.log("TOO OUTER", username);
+   // children cant be accessed outside of parents 
+
+
+    // second 
+
+    //  function outer(){
+    //     let username = "hitesh"
+    //     function inner(){
+    //         console.log("inner", username);
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // console.log("TOO OUTER", username)
+
+    //parent can share to a child Children
+    
+    // 3rd
+    // function outer(){
+    //     let username = "hitesh"
+    //     // console.log("OUTER", secret);
+    //     function inner(){
+           
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+            
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+    // parent can share to each Children
+
+    //4th
+    // function outer(){
+    //     let username = "hitesh"
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+    
+    // children cant share with each other
+
+     //5th
+    //  function outer(){
+    //     let username = "hitesh"
+    //     console.log("OUTER", secret);
+    //     function inner(){
+    //         let secret = "my123"
+    //         console.log("inner", username);
+    //     }
+    //     function innerTwo(){
+    //         console.log("innerTwo", username);
+    //         console.log(secret);
+    //     }
+    //     inner()
+    //     innerTwo()
+
+    // }
+    // outer()
+    // console.log("TOO OUTER", username);
+
+    // part one ends lexical scoping done  
+
+
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc(); 
+    // myFunc();
+
+    // function makeFunc(value) {
+    //     this.name = value;
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc(); 
+    // myFunc();
+    // output  - undefined
+    //outer function will also go cuz display  name is dependent on makefunc so it will go too
+    
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = "orange"
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = "green"
+    // }
+    // now do it 500 times 🙃
+     
+    function ClickHandler(color){
+    
+        // document.body.style.backgroundColor = `${color}`
+
+        return function(){
+              document.body.style.backgroundColor = `${color}`
+        }
+
+    }
+
+    document.getElementById("orange").onclick = ClickHandler("orange")
+    // asking for a function but we have executed it  
+
+</script>
+</html>
