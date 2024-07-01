@@ -34,3 +34,9 @@ for (let [key,value] of Object.entries(chai)) {
         console.log(`${key} ,${value}`);
     }
 }
+
+Object.defineProperty(Math,"PI",{
+    writable:true,
+    enumerable: false,
+    
+})
