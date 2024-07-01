@@ -4,12 +4,20 @@ class User {
         this.pass = pass;
 
     }
+    get email(){
+        return this._email.toUpperCase()
+    }
+
+    set email(value){
+        this._email = value
+    }
+
     get pass(){
-        return this.pass.toUpperCase()
+        return this._pass.toUpperCase()
     }
 
     set pass(value){
-        this.pass = value
+        this._pass = value
     }
 
     // error 
@@ -29,5 +37,10 @@ class User {
 
 }
 
-const hitesh = new User("hitesh.ai","112")
+const hitesh = new User("hitesh.ai","abc")
+console.log(hitesh.pass);
+console.log(hitesh.email);
 console.log(hitesh);
+ABC
+HITESH.AI
+User { _email: 'hitesh.ai', _pass: 'abc' }
