@@ -1,7 +1,7 @@
 const User  = {
     _email:"rohan",
     _pass:"abc",
-     
+    //  _ makes it private 
     get email(){
         return this._email.toUpperCase()
     },
